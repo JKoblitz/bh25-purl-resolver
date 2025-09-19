@@ -26,10 +26,13 @@ biohackathon_name: "BioHackathon Japan 2025"
 biohackathon_url:   "https://2025.biohackathon.org/"
 biohackathon_location: "Mie, Japan, 2025"
 group: PURL Resolver
-# URL to project git repo --- should contain the actual paper.md:
 git_url: https://github.com/JKoblitz/bh25-purl-resolver
 authors_short: Koblitz and Kawashima
 ---
+
+# Abstract
+
+Knowledge graphs in the life sciences are increasingly published using the Resource Description Framework (RDF) and queried via SPARQL endpoints. While these technologies enable powerful data integration, the identifiers returned in SPARQL results often do not resolve to meaningful resources, leaving users with non-actionable links. To address this issue, we developed a lightweight Persistent Uniform Resource Locator (PURL) resolver during the BioHackathon Japan 2025. The resolver is implemented in PHP, chosen for its ubiquity on standard web servers and its compatibility with the EasyRDF library for RDF handling. It is easy to configure, requires minimal maintenance, and supports both database redirects and ontology term rendering with content negotiation for RDF serializations. The system is available as open-source software (https://github.com/JKoblitz/purl-resolver) and deployed at https://purl.dsmz.de, where it now resolves most identifiers from the DSMZ Digital Diversity SPARQL endpoint (https://sparql.dsmz.de). Database IRIs lead to the corresponding web interfaces, ontology IRIs from the DSMZ Digital Diversity Ontology render directly as term pages, and unmapped entities are delegated to database-side resolvers. This approach enhances the usability of knowledge graphs by ensuring that all identifiers remain actionable for both humans and machines.
 
 
 # Introduction
