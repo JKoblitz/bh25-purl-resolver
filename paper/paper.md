@@ -27,7 +27,7 @@ biohackathon_url:   "https://2025.biohackathon.org/"
 biohackathon_location: "Mie, Japan, 2025"
 group: PURL Resolver
 # URL to project git repo --- should contain the actual paper.md:
-git_url: https://github.com/biohackathon-japan/bh25-purl-resolver
+git_url: https://github.com/JKoblitz/bh25-purl-resolver
 authors_short: Koblitz and Kawashima
 ---
 
